@@ -1,0 +1,43 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"C:\wnmp\nginx\html\tp5\public/../application/index\view\signin\login.html";i:1517637616;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>锦众科技</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, minimal-ui" />
+		<link rel="stylesheet" href="__STATIC__/index/css/login.css" />
+		<link rel="stylesheet" href="__STATIC__/index/css/animate.css" />
+
+	</head>
+
+	<body>
+		<header class="site__header island">
+			<div class="wrap">
+				<span id="animationSandbox " style="display: block;"><h1 class="site__title mega">欢迎登录锦众</h1></span>
+				<span class="beta subhead">请在下方输入您的用户名和密码</span>
+			</div>
+		</header>
+		<!-- /.site__header -->
+
+		<main class="site__content island" role="content">
+			<div class="wrap">
+				<form action="<?php echo url('Signin/doSignin'); ?>" method="post">
+					<input class="input" type="text" name="uname" id="uname" placeholder="用户名" />
+					<input class="input" type="password" name="pword" id="pword" placeholder="密码" />
+					<button class="butt js--triggerAnimation" id="signin">登录</button>
+				</form>
+				<hr />
+				<p class="meta">
+					还没有锦众帐号？
+					<a href="<?php echo url('register/index'); ?>">立即注册</a>
+				</p>
+				<p><small>或者您想要 <a href="<?php echo url('index/index'); ?>"> 回到官网</a>.</small></p>
+			</div>
+		</main>
+		<!-- /.site__content -->
+
+	</body>
+	<script src="__STATIC__/index/js/signin.js"></script>
+
+</html>
